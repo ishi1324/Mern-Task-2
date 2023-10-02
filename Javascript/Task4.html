@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Task-4</title>
+</head>
+<body>
+    <button onclick="getDate()"> show date </button>
+    <p id="dt" style="margin-top: 0px !important;"></p> <br>
+    <button onclick="getTime()"> show Time </button>
+    <p id="tm" style="margin-top: 0px !important;"></p>
+    <script>
+        function getDate(){
+            const date = new Date();
+            let day = date.getDate();
+            let month = date.getMonth();
+            let year = date.getFullYear();
+            const monthnames = ["January", "February", "March", "April", "May", "June","July", "August", "September", "October", "November", "December"];
+            let curr = `${day}/${monthnames[month]}/${year}`;
+            document.getElementById("dt").innerText = curr;
+        }
+        function getTime(){
+            const date = new Date();
+            document.getElementById("tm").innerText = date;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Task-3</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+    <style>
+        button{
+            border-radius: 5px;
+            margin-top: 3px;
+        }
+        button:hover{
+            border-color:rgb(0, 225, 233) ;
+            border-width: 2px;
+            border-style: solid;
+        }
+    </style>
+</head>
+<body>
+    
+        <div class="text-start border border-1 border-dark my-5 mx-2" style="width: 330px;">
+            <label for="n1" class="my-1 mx-2">1st Number : </label>
+            <input type="text" class="my-1" id="i1"> <br>
+            <label for="n2" class="my-1 mx-2">2nd Number : </label>
+            <input type="text" class="my-1" id="i2"> <br>
+            <div class="text-start mx-2">
+                <button onclick="mul()">Multiply</button>
+                <button onclick="div()">Divide</button>
+            </div> <br>
+            <p class="my-0 mx-2">The Result Is :</p>
+            <p class="mx-2" id="out"></p>
+        </div>
+    
+
+    <script>
+        function mul(){
+            var n1 = document.getElementById("i1").value;
+            n1 = parseInt(n1);
+            var n2 = document.getElementById("i2").value;
+            n2 = parseInt(n2);
+            var pro = n1*n2;
+            document.getElementById("out").innerText = pro;
+        }
+        function div(n1,n2){
+            var n1 = document.getElementById("i1").value;
+            n1 = parseInt(n1);
+            var n2 = document.getElementById("i2").value;
+            n2 = parseInt(n2);
+            var d = n1/n2;
+            document.getElementById("out").innerText = d;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,69 @@
+
+.top-bar .logo h1 {
+    margin: 0;
+    color: #030f27;
+    font-size: 60px;
+    line-height: 60px;
+    font-weight: 700;
+}
+.top-bar .top-bar-item {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.top-bar {
+    position: relative;
+    height: 90px;
+    background: #fdbe33;
+}
+.nav-bar {
+    padding: 0 75px;
+}
+.nav-bar {
+    position: relative;
+    background: #fdbe33;
+    transition: .3s;
+}
+body {
+    color: #666666;
+    background: #dddddd;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}
+.carousel {
+    position: relative;
+    width: 100%;
+    height: calc(100vh - 170px);
+    min-height: 400px;
+    margin: 0 auto;
+    text-align: center;
+    overflow: hidden;
+}
+
+.carousel-indicators {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 15;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+    justify-content: center;
+    padding-left: 0;
+    margin-right: 15%;
+    margin-left: 15%;
+    list-style: none;
+}
+.carousel-item {
+    position: relative;
+    display: none;
+    float: left;
+    width: 100%;
+    margin-right: -100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    transition: -webkit-transform .6s ease-in-out;
+    transition: transform .6s ease-in-out;
+    transition: transform .6s ease-in-out,-webkit-transform .6s ease-in-out;
+}

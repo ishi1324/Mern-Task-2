@@ -1,0 +1,25 @@
+
+  .card {
+    background: #fff;
+    border: 1px solid #dd2476;
+    color: rgba(250, 250, 250, 0.8);
+    margin-bottom: 2rem;
+    color: black;
+  }
+  
+  .btn {
+    border: 5px solid;
+    border-image-slice: 1;
+    background: var(--gradient) ;
+    border-image-source:  var(--gradient)   ; 
+    text-decoration: none;
+    transition: all .4s ease;
+    
+  }
+  
+  .btn:hover, .btn:focus {
+    background: var(--gradient)   ;
+    border: 5px solid #fff   ; 
+    box-shadow: #fff 1px 0 10px;
+    text-decoration: underline;
+  }
